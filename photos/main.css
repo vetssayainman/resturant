@@ -1,0 +1,11 @@
+
+body{
+    a:hover,
+     a:active{
+        color:e63e52;
+    }
+
+    a:visited{
+        color:#e63e62;
+    }
+}
