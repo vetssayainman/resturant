@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Restaurant</title>
+    <meta author="vets" content="resturant">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Aspiring web developer">
+    <link rel="icon" href="photos/potatomancer.jpg" type="image/x-icon" >
+    <meta propety="og:title" content="Hello, Fries, Again"
+    <meta  property="og:description" content="Enjoy fresh seafood and delicious meals every day.">
+    <meta property="og:image" content="https://example.com/images/restaurant.jpg">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="website">
+    <link rel=" stylesheet" href="main.css">
+
+
+</head>
+
+<body bgcolor="#EFEAB5" text="#000000">
+
+    <header>
+        <div style="display: flex; gap: 0px;">
+            <img src="photos/potatomancer.jpg" height="40" style="border-radius: 5px; margin-right: 10px;" title="restaurant logo">
+
+            <div >
+                <h1 style="text-align: center;color: #333; font-weight: 50; margin: 0%; font-size: 20px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" title="name of resturant">Hello, Fries, Again</h1>
+       
+                <p style="text-align: center; color: #333; font-weight: 3; margin: inherit; font-size: 15px;" title="Qoute"><i>"long fries, long love"</i></p>
+            </div>
+        </div>
+    </header>
+    <hr style="border: 1px solid #e63e62; margin: 0px; padding: 0px;" >
+    <div >
+        <nav>
+            <ul  style="display: flex; background: #EFEAB5; color: rgb(128,128,128); list-style: none; gap: 20px; justify-content: left; margin: 0px; padding: 0px;">
+                <li><a  href="index.html" >Home</a></li>
+                <li><a href="gallery.html" >Gallery</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="about.html" >About</a></li>
+            </ul>
+        </nav>
+        <br>
+    </div>
+
+
+    <div style="display: flex; align-items: center; height: 80vh; width: 115%; position: relative; font-size: 100%;">
+        <img  src="photos/restu.jpg" height="500" style=" border: 40px solid #e63e62  ; text-align:end; border-radius: 100px; width: 1000; margin-right: 20px; position:absolute" title="restaurant image">
+        <img src="photos/fries.jpg" height="500" style=" border: 40px solid #e63e62  ; text-align:center; border-radius: 100px; width: 1000; margin-right: 40px; position: absolute; top: 50%; left: 40%; transform: translate(-50%, -50%);" title="restaurant image">
+        <div style="position: absolute; top: 45%; left: 70%; transform: translate(-50%, -50%); text-align:right; color: #775ce4; font-size: 25px; font-weight: bold;">
+            <h1 style=" text-align: center; margin: auto; border-radius: 100px; border: 10px solid #e63e62; color: #e63e62; font-size:50px; left: 80%; gap: 60px;">Hello, Fries, Again</h1>
+            <h2 style="color: #e63e62;">Welcome to our restaurant, <br>I know you will come back</h2>
+            <h3>Enjoy your meal!</h3>
+            <div style=" color: #000000; padding: 10px; border-radius: 5px; text-align: end; font-family: 'Courier New', Courier, monospace; gap: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: small">
+                <p>Hello, Fries, Again is a restaurant dedicated to serving delicious, crispy, and freshly made French fries paired with refreshing drinks and tasty side dishes. Our goal is to provide affordable meals, excellent service, and a warm dining experience that keeps every customer coming back for more.</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center; height: 0vh; width: 180%; background-color: #f2f2f2; border-radius: 100px; margin-top: 20px;">
+        <button onclick="reserveTable()" style="border-radius: 10px; background: #EFEAB5; border: 10px groove; position: absolute; left: 90%;">reservation table</button>
+
+        <button onclick="special()" style="border-radius: 10px; background: #EFEAB5; border: 10px groove; position: absolute; left: 81%;">check specials</button>
+
+        <button onclick="online()" style="border-radius: 10px; background: #EFEAB5; border: 10px groove; position: absolute; left: 75%;">Menu</button>
+
+        <script>
+            function special() {
+                window.location.href = "specialty.html";
+            }
+
+            function online() {
+                window.location.href = "menu.html";
+            }
+            function reserveTable() {
+                window.location.href = "reservation.html";
+            }            
+        
+        </script>
+    </div>
+
+    <br>
+
+    <hr>
+
+    <footer style="background:#333; color:white; text-align:center; padding:20px; margin-top:50px; opacity: 30;">
+    <p>&copy; 2026 Hello, Fries, Again.</p>
+    <p>📍<a href="https://www.google.com/maps/place/St.+Paul+Christian+School/@14.6855051,120.9757509,17z/data=!3m1!4b1!4m6!3m5!1s0x3397b40f00000001:0x6d96ecea3526abe9!8m2!3d14.6855051!4d120.9783258!16s%2Fg%2F12qflc5xg?entry=ttu&g_ep=EgoyMDI2MDgwNC4wIKXMDSoASAFQAw%3D%3D">24 Tadeo St. Karuhatan, Valenzuela City, Philippines</a></p>
+    <p>📞<a href="photos/ruru.jpg"> 0912-345-6789</a></p>
+    <p><a href="photos/dubist.mp3">📧 hellofriesagain@gmail.com</a></p>
+</footer>
+
+   
+</body>
+
+
+</html>
