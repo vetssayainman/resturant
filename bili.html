@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="photos/potatomancer.jpg" type="image/x-icon" >
+    <link rel=" stylesheet" href="main.css">
+
+
+</head>
+<body bgcolor="#efeab5">
+
+    <header>
+        <div style="display: flex; gap: 0px;">
+            <img src="photos/potatomancer.jpg" height="40" style="border-radius: 5px; margin-right: 10px;" title="restaurant logo">
+
+            <div >
+                <h1 style="text-align: center;color: #333; font-weight: 50; margin: 0%; font-size: 20px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" title="name of resturant">Hello, Fries, Again</h1>
+       
+                <p style="text-align: center; color: #333; font-weight: 3; margin: inherit; font-size: 15px;" title="Qoute"><i>"long fries, long love"</i></p>
+            </div>
+        </div>
+    </header>
+    <hr style="border: 1px solid #e63e62; margin: 0px; padding: 0px;" >
+    <div >
+        <nav>
+            <ul  style="display: flex; background: #EFEAB5; color: rgb(128,128,128); list-style: none; gap: 20px; justify-content: left; margin: 0px; padding: 0px;">
+                <li><a  href="index.html" >Home</a></li>
+                <li><a href="gallery.html" >Gallery</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="about.html" >About</a></li>
+            </ul>
+        </nav>
+        <br>
+    </div>
+    <h1 style="border: 10px dotted #e63e62; border-radius: 100px; text-align: center; font-size: 4pc; font-family: georgia;">Hello, Fries, Again</h1>
+    <br>
+    <div style="width: 200; height: 100; border: 10px solid #e63e62; margin-top: 100px; margin: auto; text-align: center; font-size: 2pc; font-family:  segoe UI;"  > receipt
+        <br>
+        <div id="receipt" style="text-align: left; ">
+            <script>
+                let name = localStorage.getItem("Name");
+
+                let maindish = localStorage.getItem("Main Dish");
+                let mainQty = localStorage.getItem("main dish Quantity");
+
+                let appetizer = localStorage.getItem("Appetizer");
+                let appetizerQty = localStorage.getItem("Appetizer Quantity");
+
+                let dessert = localStorage.getItem("Dessert");
+                let dessertQty = localStorage.getItem("Dessert Quantity");
+
+                let drink = localStorage.getItem("Drinks");
+                let drinkQty = localStorage.getItem("Drink Quantity");
+                let address = localStorage.getItem("Address");
+
+
+                document.getElementById("receipt").innerHTML = `
+                
+                <b>Customer :</b> ${name}<br><hr style="border: 2px dotted #e63e62"><br>
+
+                <b>Main Dish :</b> ${maindish}<br>
+                <b>Quantity :</b> ${mainQty}<br><hr style="border: 2px dotted #e63e62">
+
+                <b>Appetizer :</b> ${appetizer}<br>
+                <b>Quantity :</b> ${appetizerQty}<br><hr style="border: 2px dotted #e63e62">
+
+                <b>Dessert :</b> ${dessert}<br>
+                <b>Quantity :</b> ${dessertQty}<br><hr style="border: 2px dotted #e63e62">
+
+                <b> Drinks :</b> ${drink}<br>
+                <b>Quantity :</b> ${drinkQty}<br><hr style="border: 2px dotted #e63e62">
+                `;
+
+            </script>
+
+        </div>
+
+        <h2 style="font-family: segoe UI; color: #e63e62;">Thank you for buying!</h2>
+        <h2 style="font-family: segoe UI; color: #e63e62;">See you Again!</h2>
+
+
+    </div>
+
+    <footer style="background:#333; color:white; text-align:center; padding:20px; margin-top:50px; opacity: 30;">
+    <p>&copy; 2026 Hello, Fries, Again.</p>
+    <p>📍<a href="https://www.google.com/maps/place/St.+Paul+Christian+School/@14.6855051,120.9757509,17z/data=!3m1!4b1!4m6!3m5!1s0x3397b40f00000001:0x6d96ecea3526abe9!8m2!3d14.6855051!4d120.9783258!16s%2Fg%2F12qflc5xg?entry=ttu&g_ep=EgoyMDI2MDgwNC4wIKXMDSoASAFQAw%3D%3D">24 Tadeo St. Karuhatan, Valenzuela City, Philippines</a></p>
+    <p>📞<a href="photos/ruru.jpg"> 0912-345-6789</a></p>
+    <p><a href="photos/dubist.mp3">📧 hellofriesagain@gmail.com</a></p>
+    </footer>
+
+
+</body>
+</html>
