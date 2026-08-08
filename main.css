@@ -1,11 +1,58 @@
+/* LINK VISUAL EFFECTS */
 
-body{
-    a:hover,
-     a:active{
-        color:e63e52;
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e63e62;
+}
+
+a:active {
+    color: #e63e52;
+}
+
+a:visited {
+    color: #e63e62;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
 
-    a:visited{
-        color:#e63e62;
+    header {
+        width: 100%;
     }
+
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+
+    .container,
+    .hero,
+    .content,
+    .main-content {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
 }
